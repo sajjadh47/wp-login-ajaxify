@@ -1,17 +1,19 @@
 === Ajaxify WP Login ===
+Tags: user-login, ajax, wp-login, wp-custom-login, ajax-login
 Contributors: sajjad67
-Tags: user,user-login,ajax,wp-login,wp-custom-login,ajax-login,login-ajax
+Author: Sajjad Hossain Sagor
+Tested up to: 6.7
 Requires at least: 5.6
-Tested up to: 6.6
-Stable tag: trunk
-License: GPLv2
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Stable tag: 2.0.0
+Requires PHP: 8.0
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 This plugin turns wp-login.php form submission to an ajax form submission.
 
 == Description ==
 
-Ajaxify Your wp-login.php login system . User Can Log in Via Ajax & After Successfull Logging User Will be redirected to their dashboard according to user level.
+Ajaxify Your wp-login.php login system . User Can Log in Via Ajax & After Successful Logging User Will be redirected to their dashboard according to user level.
 
 = Features: =
 - wp-login.php login via ajax
@@ -31,8 +33,8 @@ Go to Plugins > Add New.
 4. The resulting installation screen will list the installation as successful or note any problems during the install.
 If successful, click Activate Plugin to activate it, or Return to Plugin Installer for further actions.
 
-To add a WordPress Plugin from github repo / plugin zip file :
-1. Go to wordpress plugin page
+To add a WordPress Plugin from GitHub repo / plugin zip file :
+1. Go to WordPress plugin page
 2. Click Add New & Upload Plugin
 3. Drag / Click upload the plugin zip file
 4. The resulting installation screen will list the installation as successful or note any problems during the install.
@@ -46,6 +48,8 @@ Just activate the plugin, you are good to go. All are done for you.
 1. Ajax Login.
 
 == Changelog ==
+= 2.0.0 =
+- Major changes in codebase. Compatibility checkup for latest wp version 6.7
 = 1.0.4 =
 - checked upto 6.6 wp version
 = 1.0.3 =
