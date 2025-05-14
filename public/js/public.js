@@ -43,7 +43,7 @@ jQuery( document ).ready( function( $ )
 
 				$( "form#loginform" ).before( '<div id="login_success" class="notice notice-success message">' + response.wp_success + '</div>' );
 				
-				window.location.href 	= redirect;
+				window.location.href = redirect;
 			}
 		} )
 		.fail( function( jqXHR, textStatus )
