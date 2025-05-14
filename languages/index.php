@@ -4,7 +4,7 @@
  *
  * @since         2.0.0
  * @package       Wp_Login_Ajaxify
- * @subpackage    Wp_Login_Ajaxify/includes
+ * @subpackage    Wp_Login_Ajaxify/languages
  * @author        Sajjad Hossain Sagor <sagorh672@gmail.com>
  */
 

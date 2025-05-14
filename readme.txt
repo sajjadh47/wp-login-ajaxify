@@ -2,9 +2,9 @@
 Tags: user-login, ajax, wp-login, wp-custom-login, ajax-login
 Contributors: sajjad67
 Author: Sajjad Hossain Sagor
-Tested up to: 6.7
+Tested up to: 6.8
 Requires at least: 5.6
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 Requires PHP: 8.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -16,11 +16,11 @@ This plugin turns wp-login.php form submission to an ajax form submission.
 Ajaxify Your wp-login.php login system . User Can Log in Via Ajax & After Successful Logging User Will be redirected to their dashboard according to user level.
 
 = Features: =
-- wp-login.php login via ajax
+- Submit wp-login.php via ajax
+- Seamless Implementation
+- No Configuration Needed, Just Plug & Play
+- Redirect Filter Value is Preserved
 - User will get redirected to their respected location.
-
-**Interested in contributing to WP Login Ajaxify?**
-Contact me sagorh672(at)gmail.com
 
 == Installation ==
 To add a WordPress Plugin using the built-in plugin installer:
@@ -48,6 +48,8 @@ Just activate the plugin, you are good to go. All are done for you.
 1. Ajax Login.
 
 == Changelog ==
+= 2.0.1 =
+- Checked for latest wp version 6.8
 = 2.0.0 =
 - Major changes in codebase. Compatibility checkup for latest wp version 6.7
 = 1.0.4 =

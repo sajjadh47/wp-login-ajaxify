@@ -10,9 +10,9 @@ jQuery( document ).ready( function( $ )
 
 		$( ".notice.message" ).remove();
 
-		var redirect 					= jQuery( "input[name='redirect_to'" ).val() == '' ? window.location.origin : jQuery( "input[name='redirect_to'" ).val();
+		var redirect = jQuery( "input[name='redirect_to'" ).val() == '' ? window.location.origin : jQuery( "input[name='redirect_to'" ).val();
 
-		var data 						=
+		var data =
 		{
 			'action'			: 'wpla_login_ajax',
 			'login'				: $( "input#user_login" ).val(),
@@ -23,11 +23,11 @@ jQuery( document ).ready( function( $ )
 
 		if ( $( "input#rememberme" ).is( ':checked' ) )
 		{
-			data['rememberme'] 			= $( "input#rememberme" ).val();
+			data.rememberme = $( "input#rememberme" ).val();
 		}
 
 		$.ajax( {
-			url 	: WP_LOGIN_AJAXIFY.ajaxurl,
+			url 	: WpLoginAjaxify.ajaxurl,
 			type 	: 'POST',
 			data 	: data,
 		} )
@@ -48,7 +48,7 @@ jQuery( document ).ready( function( $ )
 		} )
 		.fail( function( jqXHR, textStatus )
 		{
-			$( "form#loginform" ).before( '<div id="login_error" class="notice notice-error message">' + WP_LOGIN_AJAXIFY.failedMsg + '</div>' );
+			$( "form#loginform" ).before( '<div id="login_error" class="notice notice-error message">' + WpLoginAjaxify.failedMsg + '</div>' );
 		} )
 		.always( function()
 		{

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The plugin bootstrap file
  *
@@ -8,13 +7,15 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @since             2.0.0
  * @package           Wp_Login_Ajaxify
+ * @author            Sajjad Hossain Sagor <sagorh672@gmail.com>
  *
  * Plugin Name:       Ajaxify WP Login
  * Plugin URI:        https://wordpress.org/plugins/wp-login-ajaxify/
- * Description:       Login Into Wordpress Via Ajax Request.
- * Version:           2.0.0
+ * Description:       Login Into WordPress Via Ajax Request.
+ * Version:           2.0.1
+ * Requires at least: 6.5
+ * Requires PHP:      8.0
  * Author:            Sajjad Hossain Sagor
  * Author URI:        https://sajjadhsagor.com/
  * License:           GPL-2.0+
@@ -24,12 +25,14 @@
  */
 
 // If this file is called directly, abort.
-if ( ! defined( 'WPINC' ) ) die;
+if ( ! defined( 'ABSPATH' ) ) {
+	die;
+}
 
 /**
  * Currently plugin version.
  */
-define( 'WP_LOGIN_AJAXIFY_VERSION', '2.0.0' );
+define( 'WP_LOGIN_AJAXIFY_PLUGIN_VERSION', '2.0.1' );
 
 /**
  * Define Plugin Folders Path
@@ -42,41 +45,39 @@ define( 'WP_LOGIN_AJAXIFY_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 
 /**
  * The code that runs during plugin activation.
- * This action is documented in includes/class-plugin-activator.php
- * 
+ * This action is documented in includes/class-wp-login-ajaxify-activator.php
+ *
  * @since    2.0.0
  */
-function activate_wp_login_ajaxify()
-{
-	require_once WP_LOGIN_AJAXIFY_PLUGIN_PATH . 'includes/class-plugin-activator.php';
-	
-	Wp_Login_Ajaxify_Activator::activate();
+function on_activate_wp_login_ajaxify() {
+	require_once WP_LOGIN_AJAXIFY_PLUGIN_PATH . 'includes/class-wp-login-ajaxify-activator.php';
+
+	Wp_Login_Ajaxify_Activator::on_activate();
 }
 
-register_activation_hook( __FILE__, 'activate_wp_login_ajaxify' );
+register_activation_hook( __FILE__, 'on_activate_wp_login_ajaxify' );
 
 /**
  * The code that runs during plugin deactivation.
- * This action is documented in includes/class-plugin-deactivator.php
- * 
+ * This action is documented in includes/class-wp-login-ajaxify-deactivator.php
+ *
  * @since    2.0.0
  */
-function deactivate_wp_login_ajaxify()
-{
-	require_once WP_LOGIN_AJAXIFY_PLUGIN_PATH . 'includes/class-plugin-deactivator.php';
-	
-	Wp_Login_Ajaxify_Deactivator::deactivate();
+function on_deactivate_wp_login_ajaxify() {
+	require_once WP_LOGIN_AJAXIFY_PLUGIN_PATH . 'includes/class-wp-login-ajaxify-deactivator.php';
+
+	Wp_Login_Ajaxify_Deactivator::on_deactivate();
 }
 
-register_deactivation_hook( __FILE__, 'deactivate_wp_login_ajaxify' );
+register_deactivation_hook( __FILE__, 'on_deactivate_wp_login_ajaxify' );
 
 /**
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
- * 
+ *
  * @since    2.0.0
  */
-require WP_LOGIN_AJAXIFY_PLUGIN_PATH . 'includes/class-plugin.php';
+require WP_LOGIN_AJAXIFY_PLUGIN_PATH . 'includes/class-wp-login-ajaxify.php';
 
 /**
  * Begins execution of the plugin.
@@ -87,10 +88,9 @@ require WP_LOGIN_AJAXIFY_PLUGIN_PATH . 'includes/class-plugin.php';
  *
  * @since    2.0.0
  */
-function run_wp_login_ajaxify()
-{
+function run_wp_login_ajaxify() {
 	$plugin = new Wp_Login_Ajaxify();
-	
+
 	$plugin->run();
 }
 
