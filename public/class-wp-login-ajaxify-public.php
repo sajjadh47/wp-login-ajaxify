@@ -71,8 +71,8 @@ class Wp_Login_Ajaxify_Public {
 		 *
 		 * This filter is used to modify the failed login message in the login form.
 		 *
-		 * @since     2.0.0
-		 * @param     string $msg The message.
+		 * @since    2.0.0
+		 * @param    string $msg The message.
 		 */
 		$failed_msg = apply_filters( 'wpla_failed_login_msg', __( 'Something went wrong! Please try again later!', 'wp-login-ajaxify' ) );
 
@@ -120,8 +120,8 @@ class Wp_Login_Ajaxify_Public {
 		 *
 		 * This filter is used to modify the success login message in the login form.
 		 *
-		 * @since     2.0.0
-		 * @param     string $msg The message.
+		 * @since    2.0.0
+		 * @param    string $msg The message.
 		 */
 		$success_message = apply_filters( 'wpla_success_login_message', __( 'Successfully Logged in, redirecting...', 'wp-login-ajaxify' ) );
 
