@@ -1,5 +1,7 @@
 # Ajaxify WP Login
 
+[![Plugin Banner](https://ps.w.org/wp-login-ajaxify/assets/banner-772x250.png)](https://wordpress.org/plugins/wp-login-ajaxify/)
+
 **Tags:** user,user-login,ajax,wp-login,wp-custom-login,ajax-login,login-ajax \
 **Tested up to:** 6.8 \
 **Requires PHP:** 8.0
