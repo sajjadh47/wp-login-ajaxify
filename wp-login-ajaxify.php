@@ -13,7 +13,7 @@
  * Plugin Name:       Ajaxify WP Login
  * Plugin URI:        https://wordpress.org/plugins/wp-login-ajaxify/
  * Description:       Login Into WordPress Via Ajax Request.
- * Version:           2.0.1
+ * Version:           2.0.2
  * Requires at least: 5.6
  * Requires PHP:      8.0
  * Author:            Sajjad Hossain Sagor
@@ -32,7 +32,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Currently plugin version.
  */
-define( 'WP_LOGIN_AJAXIFY_PLUGIN_VERSION', '2.0.1' );
+define( 'WP_LOGIN_AJAXIFY_PLUGIN_VERSION', '2.0.2' );
 
 /**
  * Define Plugin Folders Path

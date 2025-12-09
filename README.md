@@ -3,7 +3,7 @@
 [![Plugin Banner](https://ps.w.org/wp-login-ajaxify/assets/banner-772x250.png)](https://wordpress.org/plugins/wp-login-ajaxify/)
 
 **Tags:** user,user-login,ajax,wp-login,wp-custom-login,ajax-login,login-ajax \
-**Tested up to:** 6.8 \
+**Tested up to:** 6.9 \
 **Requires PHP:** 8.0
 
 This plugin turns wp-login.php form submission to an ajax form submission.
@@ -53,6 +53,9 @@ Just activate the plugin, you are good to go. All are done for you.
 
 
 ## Changelog
+
+### 2.0.2
+- Checked for latest wp version 6.9
 
 ### 2.0.1
 - Checked for latest wp version 6.8
